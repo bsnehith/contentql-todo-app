@@ -16,9 +16,7 @@ nodemon server.js
 
 Installing Frontend Dependencies or Modules
 1).npm install axios
-2).npm install react react-dom
-3).npm install react-icons
-4).npm install tailwind
+2).npm install tailwind
 
 Frontend Server Running Command:
 Go to the Frontend Directory And run the below command

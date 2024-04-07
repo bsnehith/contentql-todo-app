@@ -22,7 +22,7 @@ Installing Frontend Dependencies or Modules
 
 Frontend Server Running Command:
 Go to the Frontend Directory And run the below command
-cd frontend
+cd todo-app
 npm start
 
 🔧 The backend is developed using Payload CMS with MongoDB as the database. It includes controllers, models, routes, and server setup files.

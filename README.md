@@ -35,14 +35,14 @@ npm start
 The `.env` file contains the MongoDB connection URL.
 
 ### Running the Backend
-![Image Alt Text]( https://github.com/bsnehith/contentql-todo-app/blob/main/comtentqlfrontend.jpg)
+![Image Alt Text]( https://github.com/bsnehith/contentql-todo-app/blob/main/comtentqlbackend.jpg)
 
 1. Navigate to the `backend` directory.
 2. Run `npm install` to install dependencies.
 3. Start the server with `nodemon server.js`.
 
 ## Frontend
-![Image Alt Text]( https://github.com/bsnehith/contentql-todo-app/blob/main/contentqlbackend.jpg)
+![Image Alt Text]( https://github.com/bsnehith/contentql-todo-app/blob/main/contentqlfrontend.jpg)
 
 🎨 The frontend is built using React/Next.js. It includes components, utilities, and main application files.
 

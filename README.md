@@ -44,7 +44,7 @@ The `.env` file contains the MongoDB connection URL.
 3. Start the server with `nodemon server.js`.
 
 ## Frontend
-![Image Alt Text]( https://github.com/bsnehith/contentql-todo/blob/main/CONTENTQLFRONTEND.jpg)
+![Image Alt Text]( https://github.com/bsnehith/contentql-todo-app/blob/main/contentqlbackend.jpg)
 
 🎨 The frontend is built using React/Next.js. It includes components, utilities, and main application files.
 

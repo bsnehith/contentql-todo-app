@@ -37,7 +37,7 @@ npm start
 The `.env` file contains the MongoDB connection URL.
 
 ### Running the Backend
-![Image Alt Text]( https://github.com/bsnehith/contentql-todo/blob/main/CONTENTBACKEND.jpg)
+![Image Alt Text]( https://github.com/bsnehith/contentql-todo-app/blob/main/comtentqlfrontend.jpg)
 
 1. Navigate to the `backend` directory.
 2. Run `npm install` to install dependencies.

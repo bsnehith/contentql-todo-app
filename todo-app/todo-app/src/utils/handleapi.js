@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseurl = "http://localhost:5000";
+const baseurl = "https://todo-backend-xwr1.onrender.com";
 
 const getAllTodo = (setTodo) => {
   axios
@@ -31,7 +31,7 @@ const updateTodo = (todoId, text, setTodo) => {
     .catch(error => console.error('Error updating todo:', error));
 };
 
-const deleteTodo = (todoId, setTodo) => { // Corrected function name
+const deleteTodo = (todoId, setTodo) => {
   axios
     .post(`${baseurl}/delete`, { _id: todoId })
     .then(() => {

@@ -1,10 +1,19 @@
 import axios from 'axios';
 
+// Deployment URL
+const deploymentURL = "https://todo-backend-xwr1.onrender.com";
+
+// Base URL for local development
 const baseurl = "http://localhost:5000";
+
+// Function to determine base URL based on environment
+const getBaseURL = () => {
+  return process.env.NODE_ENV === 'production' ? deploymentURL : baseurl;
+};
 
 const getAllTodo = (setTodo) => {
   axios
-    .get(baseurl)
+    .get(`${getBaseURL()}`)
     .then(({ data }) => {
       console.log(`data --->`, data);
       setTodo(data);
@@ -14,7 +23,7 @@ const getAllTodo = (setTodo) => {
 
 const addTodo = (text, setText, setTodo) => {
   axios
-    .post(`${baseurl}/save`, { text })
+    .post(`${getBaseURL()}/save`, { text })
     .then(() => {
       setText("");
       getAllTodo(setTodo);
@@ -24,16 +33,16 @@ const addTodo = (text, setText, setTodo) => {
 
 const updateTodo = (todoId, text, setTodo) => {
   axios
-    .put(`${baseurl}/update/${todoId}`, { text })
+    .put(`${getBaseURL()}/update/${todoId}`, { text })
     .then(() => {
       getAllTodo(setTodo);
     })
     .catch(error => console.error('Error updating todo:', error));
 };
 
-const deleteTodo = (todoId, setTodo) => { // Corrected function name
+const deleteTodo = (todoId, setTodo) => {
   axios
-    .post(`${baseurl}/delete`, { _id: todoId })
+    .post(`${getBaseURL()}/delete`, { _id: todoId })
     .then(() => {
       getAllTodo(setTodo);
     })
@@ -42,7 +51,7 @@ const deleteTodo = (todoId, setTodo) => { // Corrected function name
 
 const completeTodo = (todoId, setTodo) => {
   axios
-    .put(`${baseurl}/complete/${todoId}`, { completed: true })
+    .put(`${getBaseURL()}/complete/${todoId}`, { completed: true })
     .then(() => {
       getAllTodo(setTodo);
     })
@@ -50,4 +59,3 @@ const completeTodo = (todoId, setTodo) => {
 };
 
 export { getAllTodo, addTodo, updateTodo, deleteTodo, completeTodo }; // Export the functions
-

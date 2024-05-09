@@ -3,6 +3,9 @@
 
 🚀 Welcome to the Todo Application project! This application allows users to manage todo items with ease.
 
+## Deployment
+https://todo-app-xi-fawn.vercel.app/
+
 ## Backend
 
 Intalling Backend Dependencies or Modules
